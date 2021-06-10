@@ -9,12 +9,12 @@ spec:
     chart: dex
     helm:
       parameters:
-      - name: configSecret.create
-        value: "false"
-      - name: configSecret.name
-        value: dex-config
-    repoURL: https://charts.dexidp.io
-    targetRevision: 0.3.3
+        - name: configSecret.create
+          value: "false"
+        - name: configSecret.name
+          value: dex-config
+    repoURL: https://github.com/laxmansmr-us/argoflow
+    targetRevision: master
   destination:
     namespace: auth
     server: https://kubernetes.default.svc

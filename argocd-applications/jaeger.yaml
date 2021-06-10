@@ -6,19 +6,19 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://jaegertracing.github.io/helm-charts
-    targetRevision: 2.21.2
+    repoURL: https://github.com/laxmansmr-us/argoflow
+    targetRevision: master
     chart: jaeger-operator
     helm:
-     parameters:
-      - name : image.repository
-        value : jaegertracing/jaeger-operator
-      - name: image.tag
-        value: 1.22.0
-      - name: jaeger.create
-        value: "true"
-      - name: jaeger.namespace
-        value: monitoring
+      parameters:
+        - name: image.repository
+          value: jaegertracing/jaeger-operator
+        - name: image.tag
+          value: 1.22.0
+        - name: jaeger.create
+          value: "true"
+        - name: jaeger.namespace
+          value: monitoring
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring

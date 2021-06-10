@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/DavidSpek/argoflow
-    targetRevision: HEAD
+    repoURL: https://github.com/laxmansmr-us/argoflow
+    targetRevision: master
     path: auth/overlays/keycloak/
     kustomize:
       version: v4.0.5

@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://nvidia.github.io/gpu-feature-discovery
-    targetRevision: 0.4.1
+    repoURL: https://github.com/laxmansmr-us/argoflow
+    targetRevision: master
     chart: gpu-feature-discovery
   destination:
     server: https://kubernetes.default.svc

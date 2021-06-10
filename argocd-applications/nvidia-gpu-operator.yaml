@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://nvidia.github.io/gpu-operator
-    targetRevision: v1.7.0
+    repoURL: https://github.com/laxmansmr-us/argoflow
+    targetRevision: master
     chart: gpu-operator
     helm:
-     parameters:
-      - name : operator.defaultRuntime
-        value : containerd
+      parameters:
+        - name: operator.defaultRuntime
+          value: containerd
   destination:
     server: https://kubernetes.default.svc
     namespace: default

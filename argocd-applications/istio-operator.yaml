@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/istio/istio'
-    targetRevision: HEAD
+    repoURL: 'https://github.com/laxmansmr-us/argoflow'
+    targetRevision: master
     path: manifests/charts/istio-operator
     helm:
       parameters:
-      - name: hub
-        value: docker.io/istio
-      - name: tag
-        value: 1.10.0 # istio/operator
+        - name: hub
+          value: docker.io/istio
+        - name: tag
+          value: 1.10.0 # istio/operator
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-operator
